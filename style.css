@@ -1,0 +1,14 @@
+* {
+	outline: 0; margin: 0; padding: 0; border: 0;
+}
+html, body {
+	overflow: hidden;
+}
+.hide {
+	display: none;
+}
+.person_car {
+	background: transparent url(img/person_car.jpg) center / cover;
+	width: 5rem;
+	height: 10rem;
+}
