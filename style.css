@@ -2,13 +2,77 @@
 	outline: 0; margin: 0; padding: 0; border: 0;
 }
 html, body {
+	width: 100%;
+	height: 100%;
 	overflow: hidden;
+}
+body {
+
+	background: url('img/bg.jpg');
+}
+.start {
+	text-align: center;
+	color: #aaa;
+	text-shadow: rgba(100,100,100,.8);
+	margin: 0 auto;
+	width: 22rem;
+	height: 3rem;
+	font-weight: bold;
+	font-size: 1.2em;
+	line-height: 3rem;
+	background: #424242;
+	border: .6rem double #fff;
+	cursor: pointer;
 }
 .hide {
 	display: none;
 }
+.game {
+	position: relative;
+}
+.paper {
+	background: #424242;
+	width: 22rem;
+	height: 100vh;
+	margin: 0 auto;
+	position: relative;
+	outline: .4rem double #444;
+}
 .person_car {
-	background: transparent url(img/person_car.jpg) center / cover;
+	background: transparent url('img/person_car.jpg') center / cover;
 	width: 5rem;
-	height: 10rem;
+	height: 11rem;
+	position: absolute;
+	right: 8.5rem;
+	bottom: 1rem;
+	z-index: 2020;
+}
+.lines {
+	position: absolute;
+	margin: 0 auto;
+	right: 10.7rem;
+}
+.line {
+	width: .6em;
+	height: 4em;
+	background-color: #fff;
+	margin: 4em auto 0 auto;
+}
+/*
+.line:first-child {
+	background-color: #0f0;
+}
+.line:last-child {
+	background-color: #f00;
+}*/
+
+
+.car {
+	background: transparent url('img/mob1_car.jpg') center / cover;
+	width: 5rem;
+	height: 11rem;
+	position: absolute;
+	right: 8.5rem;
+	bottom: 1rem;
+	z-index: 1991;
 }
